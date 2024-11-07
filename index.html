@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <head>
+        <title>Collecting Thanksgiving Recipes</title>
+    </head>
+    <body>
+        <h1>Collecting Thanksgiving Recipes</h1>
+
+        <form id="form"> 
+            <div>
+                <label for="email">Your email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="date">Today's date:</label>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div>
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" name="recipe-name" id="recipe-name">
+            </div>
+
+            <p>What ingredients are in your recipe?</p>
+            <div>
+                <input type="checkbox" name="ingredients" id="ingredients-fruit" value="Fruit">
+                <label for="ingredients">Fruit</label>
+            </div>
+            <div>
+                <input type="checkbox" name="ingredients" id="ingredients-vegetables" value="Vegetables">
+                <label for="ingredients">Vegetables</label>
+            </div>
+            <div>
+                <input type="checkbox" name="ingredients" id="ingredients-grains" value="Grains">
+                <label for="ingredients">Grains</label>
+            </div>
+            <div>
+                <input type="checkbox" name="ingredients" id="ingredients-dairy" value="Dairy">
+                <label for="ingredients">Dairy</label>
+            </div>
+
+            <div>
+                <label for="category">What type of recipe is this?</label>
+                <select name="category" id="category">
+                    <option value="Appetizer">Appetizer</option>
+                    <option value="Main Entree">Main Entree</option>
+                    <option value="Side">Side</option>
+                    <option value="Dessert">Dessert</option>
+                </select>
+            </div>
+
+            <input id="submit-button" type="submit" value="Send Your Recipe To Us">
+
+            <script src="js/index.js"></script>
+        </form>
+    </body>
+</html>
